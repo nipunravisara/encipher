@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 You can simply run encipher by
 ```python
-python encypher.py 
+python encipher.py 
 ```
 ### or
 Run with Command-Line Arguments
