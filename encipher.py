@@ -1,8 +1,8 @@
 import base64
 import os, shutil
 import getopt, sys
-from modules.logo import *
-from modules.colors import colors
+from logo import *
+from colors import colors
 from getpass import getpass
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
@@ -73,7 +73,7 @@ def encryptFile():
 	fileNameList = os.listdir(home_dir + sourse_path)
 	
 	for file in fileNameList:
-		if file.endswith(('.png', '.PNG', '.jpg', '.JPG', '.jpeg', 'JPEG', 'txt', 'pdf', 'mp3', 'mp4', 'mkv')):
+		if file.endswith(('.png', '.PNG', '.jpg', '.JPG', '.jpeg', 'JPEG', 'txt', 'pdf', 'mp3', 'mp4', 'MP4', 'mkv')):
 			input_file = file
 			output_file = file + '.enc'
 			with open(input_file, 'rb') as f:
